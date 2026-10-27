@@ -104,12 +104,19 @@ input,select,textarea{background:#fff;color:var(--white);border-color:#cfc6b3}
 input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(143,111,54,.25)}
 .hero input:focus,.hero select:focus,.hero textarea:focus{box-shadow:0 0 0 3px rgba(216,189,136,.3)}
 .tbl{overflow-x:auto}.tbl table{width:100%;border-collapse:collapse;min-width:440px}.tbl th,.tbl td{padding:16px 12px;text-align:left;border-bottom:1px solid rgba(143,111,54,.25)}.tbl tr:last-child td{border-bottom:0}.tbl th{font:500 .9rem Jost,sans-serif;color:var(--mute)}.tbl td.p{font:600 1.5rem "Cormorant Garamond",serif;color:var(--gold);white-space:nowrap}.tbl td small{display:block;color:var(--mute);font-size:.85rem}
+.dd{position:relative;display:inline-block}
+.dd summary{cursor:pointer;list-style:none;color:inherit}
+.dd summary::-webkit-details-marker{display:none}
+.ddm{display:flex;flex-direction:column;background:#0b1b36;padding:.5rem 1rem}
+.ddm a{padding:.5rem 0;white-space:nowrap}
+@media(min-width:900px){.dd .ddm{position:absolute;top:100%;left:0;z-index:50;min-width:200px}}
 </style>
 </head>
 <body>
 <header><div class="wrap"><a class="logo" href="#top">Private Hire Limousine</a>
 <button id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
-<nav id="nav" aria-label="Main"><a href="#services">Services</a><a href="#fleet">Fleet</a><a href="#pricing">Pricing</a><a href="#why">Why us</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="/abu-dhabi-travel-guide/">Travel Guide</a><a href="#contact">Contact</a><a class="btn" href="#book">Book Now</a></nav></div></header>
+<nav id="nav" aria-label="Main"><a href="#services">Services</a><a href="#fleet">Fleet</a><a href="#pricing">Pricing</a><a href="#why">Why us</a><a href="#about">About</a><a href="#faq">FAQ</a><details class="dd"><summary>Travel Guide</summary><div class="ddm"><a href="/abu-dhabi-travel-guide/">Abu Dhabi Guide</a><a href="/louvre-abu-dhabi">Louvre Abu Dhabi</a><a href="/guggenheim">Guggenheim</a></div></details>
+<a href="#contact">Contact</a><a class="btn" href="#book">Book Now</a></nav></div></header>
 
 <main id="top">
 <section class="hero"><div class="wrap grid">
