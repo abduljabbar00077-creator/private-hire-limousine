@@ -5,3 +5,11 @@
 4. Have a lawyer review Privacy, Terms and cancellation/waiting terms (the wording now says they are confirmed in the quotation).
 5. Cloudflare: turn on Web Analytics (then update the Privacy Policy), and Email Routing for contact@.
 6. Add real reviews when you have them.
+
+# Adding a new article
+1. Copy an existing article folder (for example `louvre-abu-dhabi`), rename it, and edit its `index.html` and image.
+2. Open `articles.json` and add one entry at the TOP of the list:
+   `{"title": "Burj Khalifa", "url": "/burj-khalifa/", "date": "2026-12-01", "description": "One sentence."},`
+   (Every entry except the last must end with a comma.)
+3. Commit. The Travel Guide menu, the All articles page and sitemap.xml update by themselves.
+   The menu shows the newest 5 articles. The All articles page shows every one.

@@ -129,7 +129,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 
 <header><div class="wrap"><a class="logo" href="#top">Private Hire Limousine</a>
 <a class="hcall" href="tel:+971508361599" aria-label="Call us">Call</a>
 <button id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
-<nav id="nav" aria-label="Main"><a href="#services">Services</a><a href="/abu-dhabi-limousine/">Abu Dhabi Limousine</a><a href="/dubai-limousine/">Dubai Limousine</a><a href="#tour">Abu Dhabi Tour</a><a href="#dubai-tour">Dubai Tour</a><a href="#why">Why us</a><a href="#about">About</a><a href="#faq">FAQ</a><details class="dd"><summary>Travel Guide</summary><div class="ddm"><a href="/abu-dhabi-travel-guide/">Abu Dhabi Guide</a><a href="/louvre-abu-dhabi">Louvre Abu Dhabi</a><a href="/zayed-national-museum/">Zayed National Museum</a><a href="/guggenheim">Guggenheim</a><a href="/al-ain-heritage-adventure/">Al Ain Heritage Adventure</a></div></details>
+<nav id="nav" aria-label="Main"><a href="#services">Services</a><a href="/abu-dhabi-limousine/">Abu Dhabi Limousine</a><a href="/dubai-limousine/">Dubai Limousine</a><a href="#tour">Abu Dhabi Tour</a><a href="#dubai-tour">Dubai Tour</a><a href="#why">Why us</a><a href="#about">About</a><a href="#faq">FAQ</a><details class="dd" data-articles-menu><summary>Travel Guide</summary><div class="ddm"><a href="/abu-dhabi-travel-guide/">Abu Dhabi Guide</a><a href="/louvre-abu-dhabi">Louvre Abu Dhabi</a><a href="/zayed-national-museum/">Zayed National Museum</a><a href="/guggenheim">Guggenheim</a><a href="/al-ain-heritage-adventure/">Al Ain Heritage Adventure</a></div></details>
 <a href="#contact">Contact</a><a class="btn" href="#book">Book Now</a></nav></div></header>
 
 <main id="top">
@@ -281,5 +281,6 @@ if(d.get("via")!=="mail"){window.open(waLink+"?text="+encodeURIComponent(body),"
 else{location.href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent("Chauffeur quote enquiry")+"&body="+encodeURIComponent(body);st.textContent="Your email app should open with the enquiry. Press send there. This is a quote request, not a confirmed booking."}
 });
 </script>
+<script src="/nav.js" defer></script>
 </body>
 </html>
