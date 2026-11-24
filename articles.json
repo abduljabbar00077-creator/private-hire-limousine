@@ -1,8 +1,45 @@
 [
-  {"title": "Burj Khalifa Dubai", "url": "/burj-khalifa-dubai/", "date": "2026-11-23", "description": "A guide to Burj Khalifa and Downtown Dubai, with tips for travelling from Abu Dhabi."},
-  {"title": "Al Ain Heritage Adventure", "url": "/al-ain-heritage-adventure/", "date": "2026-11-22", "description": "A weekend road trip to Al Ain Oasis, Al Jahili Fort and Jebel Hafeet."},
-  {"title": "Guggenheim Abu Dhabi", "url": "/guggenheim/", "date": "2026-11-22", "description": "Visit Guggenheim Abu Dhabi on Saadiyat Island in comfort."},
-  {"title": "Zayed National Museum", "url": "/zayed-national-museum/", "date": "2026-11-22", "description": "Architecture, galleries and visitor information for Zayed National Museum."},
-  {"title": "Louvre Abu Dhabi", "url": "/louvre-abu-dhabi/", "date": "2026-11-22", "description": "Plan your Louvre Abu Dhabi visit with a private chauffeur."},
-  {"title": "Abu Dhabi Guide", "url": "/abu-dhabi-travel-guide/", "date": "2026-11-22", "description": "Top attractions, sample itineraries and tips for Abu Dhabi.", "priority": 0.7}
+  {
+    "title": "Formula 1 Abu Dhabi Grand Prix",
+    "url": "/formula-1-abu-dhabi-chauffeur/",
+    "date": "2026-11-24",
+    "description": "Plan your Formula 1 Abu Dhabi Grand Prix visit with private chauffeur services, Yas Marina Circuit transfers and airport pickups."
+  },
+  {
+    "title": "Burj Khalifa Dubai",
+    "url": "/burj-khalifa-dubai/",
+    "date": "2026-11-23",
+    "description": "A guide to Burj Khalifa and Downtown Dubai, with tips for travelling from Abu Dhabi."
+  },
+  {
+    "title": "Al Ain Heritage Adventure",
+    "url": "/al-ain-heritage-adventure/",
+    "date": "2026-11-22",
+    "description": "A weekend road trip to Al Ain Oasis, Al Jahili Fort and Jebel Hafeet."
+  },
+  {
+    "title": "Guggenheim Abu Dhabi",
+    "url": "/guggenheim/",
+    "date": "2026-11-22",
+    "description": "Visit Guggenheim Abu Dhabi on Saadiyat Island in comfort."
+  },
+  {
+    "title": "Zayed National Museum",
+    "url": "/zayed-national-museum/",
+    "date": "2026-11-22",
+    "description": "Architecture, galleries and visitor information for Zayed National Museum."
+  },
+  {
+    "title": "Louvre Abu Dhabi",
+    "url": "/louvre-abu-dhabi/",
+    "date": "2026-11-22",
+    "description": "Plan your Louvre Abu Dhabi visit with a private chauffeur."
+  },
+  {
+    "title": "Abu Dhabi Guide",
+    "url": "/abu-dhabi-travel-guide/",
+    "date": "2026-11-22",
+    "description": "Top attractions, sample itineraries and tips for Abu Dhabi.",
+    "priority": 0.7
+  }
 ]
