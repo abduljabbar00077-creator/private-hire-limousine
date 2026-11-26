@@ -36,7 +36,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 .logo{font:700 1.05rem Montserrat,sans-serif;text-decoration:none;color:var(--gold)}
 nav{display:flex;gap:22px;align-items:center}nav a{text-decoration:none;font-size:.95rem}
 #menu{display:none;background:none;border:1px solid var(--line);color:var(--white);padding:10px 14px;min-height:44px}
-@media(max-width:860px){#menu{display:block}nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--ink);padding:16px 20px;border-bottom:1px solid var(--line)}nav.open{display:flex}nav a{padding:10px 0}}
+@media(max-width:860px){#menu{display:block}nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--ink);padding:16px 20px;border-bottom:1px solid var(--line)}nav.open{display:flex;max-height:calc(100vh - 68px - env(safe-area-inset-top,0px));overflow-y:auto}nav a{padding:10px 0}}
 .hero{padding:132px 0 64px;background:radial-gradient(900px 400px at 80% 0,var(--navy2),transparent 70%),linear-gradient(180deg,var(--navy),var(--ink))}
 .hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
 @media(max-width:900px){.hero .grid{grid-template-columns:1fr}}
@@ -129,7 +129,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 
 <header><div class="wrap"><a class="logo" href="#top">Private Hire Limousine</a>
 <a class="hcall" href="tel:+971508361599" aria-label="Call us">Call</a>
 <button id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
-<nav id="nav" aria-label="Main"><a href="#services">Services</a><a href="/abu-dhabi-limousine/">Abu Dhabi Limousine</a><a href="/dubai-limousine/">Dubai Limousine</a><a href="#tour">Abu Dhabi Tour</a><a href="#dubai-tour">Dubai Tour</a><a href="#why">Why us</a><a href="#about">About</a><a href="#faq">FAQ</a><details class="dd" data-articles-menu><summary>Travel Guide</summary><div class="ddm"><a href="/abu-dhabi-travel-guide/">Abu Dhabi Guide</a><a href="/louvre-abu-dhabi">Louvre Abu Dhabi</a><a href="/zayed-national-museum/">Zayed National Museum</a><a href="/guggenheim">Guggenheim</a><a href="/al-ain-heritage-adventure/">Al Ain Heritage Adventure</a></div></details>
+<nav id="nav" aria-label="Main"><a href="#services">Services</a><a href="/abu-dhabi-limousine/">Abu Dhabi Limousine</a><a href="/dubai-limousine/">Dubai Limousine</a><a href="#tour">Abu Dhabi Tour</a><a href="#dubai-tour">Dubai Tour</a><a href="#why">Why us</a><a href="#about">About</a><a href="#faq">FAQ</a><details class="dd" data-articles-menu><summary>Travel Guide</summary><div class="ddm"><a href="/articles/"><strong>All Travel Guides</strong></a><a href="/abu-dhabi-travel-guide/">Abu Dhabi Guide</a><a href="/louvre-abu-dhabi/">Louvre Abu Dhabi</a><a href="/zayed-national-museum/">Zayed National Museum</a><a href="/guggenheim/">Guggenheim</a><a href="/al-ain-heritage-adventure/">Al Ain Heritage Adventure</a></div></details>
 <a href="#contact">Contact</a><a class="btn" href="#book">Book Now</a></nav></div></header>
 
 <main id="top">
