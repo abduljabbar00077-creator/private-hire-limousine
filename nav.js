@@ -54,6 +54,7 @@
             </div>
           </div>
           <a href="/#contact">Contact</a>
+          <a class="phl-whatsapp" href="https://wa.me/971508361599?text=Hello%20Private%20Hire%20Limousine%2C%20I%20would%20like%20a%20chauffeur%20quotation." target="_blank" rel="noopener">WhatsApp</a>
         </nav>
       </div>`;
 
@@ -66,6 +67,8 @@
       .phl-main-nav{display:flex;align-items:center;gap:20px}
       .phl-main-nav>a,.phl-guides-toggle{color:#fff;text-decoration:none;font:500 14px Arial,Helvetica,sans-serif;background:none;border:0;padding:9px 0;cursor:pointer}
       .phl-main-nav>a:hover,.phl-guides-toggle:hover{color:#e2c38f}
+      .phl-main-nav>a.phl-whatsapp{background:#c49a55;color:#101820;font-weight:700;padding:9px 16px;border-radius:5px}
+      .phl-main-nav>a.phl-whatsapp:hover{background:#e2c38f;color:#101820}
       .phl-guides{position:relative}
       .phl-guides-menu{display:none;position:absolute;top:100%;left:0;width:260px;max-height:70vh;overflow:auto;background:#fff;color:#17212b;border:1px solid #e5e8eb;border-radius:7px;box-shadow:0 12px 28px rgba(0,0,0,.2);padding:9px}
       .phl-guides.is-open .phl-guides-menu{display:block}
@@ -83,6 +86,7 @@
         .phl-main-nav>a,.phl-guides-toggle{display:block;width:100%;text-align:left;padding:11px 5px;border-top:1px solid rgba(255,255,255,.12)}
         .phl-guides-menu{position:static;width:100%;max-height:none;margin:4px 0 8px;box-shadow:none}
         .phl-guides-toggle{border:0}
+        .phl-main-nav>a.phl-whatsapp{text-align:center;margin-top:8px;border-top:0}
       }
     `;
     document.head.appendChild(style);

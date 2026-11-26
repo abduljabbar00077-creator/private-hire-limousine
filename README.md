@@ -9,7 +9,7 @@
 # Adding a new article
 1. Copy an existing article folder (for example `louvre-abu-dhabi`), rename it, and edit its `index.html` and image.
 2. Open `articles.json` and add one entry at the TOP of the list:
-   `{"title": "Burj Khalifa", "url": "/burj-khalifa/", "date": "2026-12-01", "description": "One sentence."},`
+   `{"title": "Burj Khalifa Dubai", "url": "/burj-khalifa-dubai/", "date": "2026-12-01", "description": "One sentence."},`
    (Every entry except the last must end with a comma.)
-3. Commit. The Travel Guide menu, the All articles page and sitemap.xml update by themselves.
+3. Commit. The Travel Guide menu and the All articles page update by themselves. Add the new page to `sitemap.xml` by hand.
    The menu shows the newest 5 articles. The All articles page shows every one.
