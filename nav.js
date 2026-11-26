@@ -126,32 +126,6 @@
     });
   }
 
-  // The home page has its own fixed header. Fill its Travel Guide dropdown from
-  // articles.json instead of adding a second header on top of it.
-  function buildHomeMenu(dd, articles) {
-    const menu = dd.querySelector(".ddm");
-    if (!menu || !articles.length) return;
-    const firstFive = articles.slice(0, 5);
-    const remaining = articles.slice(5);
-    const link = item => `<a href="${esc(item.url)}">${esc(item.title)}</a>`;
-    menu.innerHTML = `<a href="/articles/"><strong>All Travel Guides</strong></a>${firstFive.map(link).join("")}` +
-      (remaining.length ? `<button type="button" class="phl-home-more" aria-expanded="false">More articles <span aria-hidden="true">＋</span></button><div class="phl-home-more-links" hidden>${remaining.map(link).join("")}</div>` : "");
-    const style = document.createElement("style");
-    style.textContent = ".phl-home-more{background:none;border:0;border-top:1px solid rgba(255,255,255,.15);color:inherit;font:inherit;text-align:left;padding:.6rem 0;cursor:pointer;font-weight:700}.phl-home-more-links{display:flex;flex-direction:column}.phl-home-more-links[hidden]{display:none}.ddm{max-height:70vh;overflow:auto}";
-    document.head.appendChild(style);
-    const more = menu.querySelector(".phl-home-more");
-    if (more) {
-      const links = menu.querySelector(".phl-home-more-links");
-      more.addEventListener("click", () => {
-        const open = more.getAttribute("aria-expanded") !== "true";
-        more.setAttribute("aria-expanded", String(open));
-        links.hidden = !open;
-        more.innerHTML = open ? 'Show fewer <span aria-hidden="true">−</span>' : 'More articles <span aria-hidden="true">＋</span>';
-      });
-    }
-    document.addEventListener("click", event => { if (!dd.contains(event.target)) dd.removeAttribute("open"); });
-  }
-
   function buildArticleListing(articles) {
     const list = document.getElementById("all-articles");
     if (!list || list.dataset.rendered === "true") return;
@@ -182,8 +156,7 @@
 
   document.addEventListener("DOMContentLoaded", async () => {
     const articles = await loadArticles();
-    const homeMenu = document.querySelector("[data-articles-menu]");
-    if (homeMenu) buildHomeMenu(homeMenu, articles); else buildHeader(articles);
+    buildHeader(articles);
     buildArticleListing(articles);
   });
 })();
